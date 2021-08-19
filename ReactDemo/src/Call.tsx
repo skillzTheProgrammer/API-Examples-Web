@@ -41,6 +41,7 @@ function Call() {
         </div>
         {remoteUsers.map(user => (<div className='remote-player-wrapper' key={user.uid}>
             <p className='remote-player-text'>{`remoteVideo(${user.uid})`}</p>
+            <h1>Users</h1>
             <MediaPlayer videoTrack={user.videoTrack} audioTrack={user.audioTrack}></MediaPlayer>
           </div>))}
       </div>
